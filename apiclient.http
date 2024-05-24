@@ -1,0 +1,39 @@
+GET http://localhost:3000/veiculo HTTP/1.1
+Content-Type: application/json
+
+####
+
+
+POST http://localhost:3000/veiculo HTTP/1.1
+Content-Type: application/json
+
+{
+    "placa_veiculo": "aaaaa",
+    "modelo_veiculo": "aaaaaa",
+    "preco": 3000.0
+}
+
+
+
+########
+
+PUT http://localhost:3000/veiculo/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "placa_veiculo": "",
+    "modelo_veiculo": "",
+    "preco": 3200.60
+}
+
+
+########
+
+DELETE  http://localhost:3000/veiculo/4 HTTP/1.1
+Content-Type: application/json
+
+
+#########
+
+GET  http://localhost:3000/veiculo/corola HTTP/1.1
+Content-Type: application/json
